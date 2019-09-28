@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roman numeral converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Numeral converter...</h1>
+        <div class="input-holder">
+            <label>Roman Numeral</label>
+            <input id="roman" type="text" placeholder="Enter Roman numeral"
+            oninput="convertto(this.value)"
+            onchange="convertto(this.value)">
+        </div>
+        <div class="input-holder">
+            <label>Arabic Numeral</label>
+            <input id="arabic" type="number" placeholder="Enter arabic numeral"
+            oninput="convertfrom(this.value)"
+            onchange="convertfrom(this.value)">
+        </div>
+        <div class="doc">
+            <p>
+                In the Roman numeral system, the basic "digits" are the letters I, V, X, L, C, D, and M which represent the same numbers regardless of their position.
+                Symbols are placed in order of value, starting with the largest values.
+                When the higher numeral is placed before a lower numeral, the values of each Roman numeral are added.
+                When smaller values precede larger values, the smaller values are subtracted from the larger values, and the result is added to the total.
+                Do not repeat I, X, and C more than three times in a row. (Number 4 on a Roman numeral clock is usually written as IIII. )
+                Symbols V, L, and D cannot appear more than once consecutively.
+                Do not subtract a number from one that is more than 10 times greater: I may only precede V and X, X may only precede L and C, and C may only precede D and M.
+            </p>                    
+        </div>
+    </section>
+    <script src="Main.js"></script>
+</body>
+</html>

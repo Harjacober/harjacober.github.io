@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500,700,800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  transition: all .3s ease-in-out;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #111111;
+  background: #FFF;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden; overflow-y: auto;
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 50px 20px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+}
+div.input-holder {
+  display: flex;
+  max-width: 252px;
+  width: 252px;
+  flex-flow: column nowrap;
+  margin: 9px 0;
+  border-radius: 3px;
+  border: 1px solid #aaaaaa;
+  padding-bottom: 2px;
+}
+label {
+  padding: 3px 15px;
+  border-bottom: 1px solid #aaaaaa;
+  font-size: 13px;
+  font-weight: 500;
+  background: #ececec;
+}
+input {
+  width: 250px;
+  padding: 15px;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+input:focus  {
+} 
+.doc {
+  margin: 20px;
+  text-align: justify;
+}
+h1 {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 720px) {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 50px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  
+}
